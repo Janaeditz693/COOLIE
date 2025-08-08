@@ -1,37 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>COOLIE</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <div class="app-container">
-    <header>
-      <h1>COOLIE</h1>
-      <p class="tagline">🔥 Knowledge. Power. Style. 🔥</p>
-    </header>
+  <div class="container">
+    <h1>🧠 COOLIE</h1>
+    <p class="subtitle">Ignite Your Mind. Tamil Cinema Vibe.</p>
 
-    <main>
-      <div class="card-container">
-        <div class="card">🧠 Daily GK</div>
-        <div class="card">🗞️ News</div>
-        <div class="card">🏏 Sports</div>
-        <div class="card">😄 Funny Facts</div>
-        <div class="card">📊 Quizzes</div>
-      </div>
+    <input type="text" placeholder="Enter your image prompt..." id="prompt" />
+    <button onclick="generateImage()">🎨 Generate</button>
 
-      <div class="generator">
-        <input type="text" id="promptInput" placeholder="Enter your image prompt...">
-        <button onclick="generateImage()">🎨 Generate Image</button>
-      </div>
-    </main>
-
-    <footer>
-      <p>© 2025 COOLIE. Made with 💥 by Deva Squad.</p>
-    </footer>
+    <div id="result"></div>
   </div>
 
   <script src="script.js"></script>

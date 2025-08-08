@@ -1,60 +1,102 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Oswald', sans-serif;
-  background: url('https://i.ibb.co/qNtpHJX/coolie-bg.jpg') no-repeat center center fixed;
-  background-size: cover;
+  font-family: 'Cinzel', serif;
+  background: linear-gradient(135deg, #000000 70%, #2e2e2e 100%);
   color: gold;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
   text-align: center;
+  padding: 2rem 1rem 0;
+  background: #0b0b0b;
+  border-bottom: 2px solid gold;
 }
 
-.container {
-  background-color: rgba(0, 0, 0, 0.7);
-  margin: 5% auto;
-  padding: 40px;
-  width: 90%;
-  max-width: 600px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px gold;
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 5px red;
 }
 
-h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
-  color: gold;
-}
-
-.subtitle {
-  font-size: 18px;
-  margin-bottom: 30px;
-  color: #ddd;
-}
-
-input {
-  padding: 12px;
-  width: 80%;
-  font-size: 16px;
-  border: 2px solid gold;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-
-button {
-  padding: 12px 24px;
-  font-size: 18px;
-  background-color: gold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  color: black;
+.tagline {
+  color: #ffcc00;
+  font-size: 1.1rem;
   font-weight: bold;
-  transition: 0.3s;
 }
 
-button:hover {
-  background-color: #ffcc00;
+main {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#result {
-  margin-top: 30px;
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background: #1a1a1a;
+  border: 2px solid gold;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px red;
+}
+
+.generator {
+  display: flex;
+  gap: 1rem;
+}
+
+.generator input {
+  padding: 0.75rem;
+  width: 300px;
+  font-size: 1rem;
+  border: 2px solid gold;
+  background: #000;
+  color: white;
+}
+
+.generator button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background: gold;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.generator button:hover {
+  background: red;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #0b0b0b;
+  font-size: 0.9rem;
+  border-top: 2px solid gold;
 }
